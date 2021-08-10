@@ -1,0 +1,106 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.App{
+  background: #E8E8E8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  background: #9D9D9D;
+  width: 450px;
+  height: 550px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+}
+.canvas{
+  background: #fff;
+  width: 425px;
+  height: 300px;
+  border-radius: 5% 5% 0 0;
+}
+.control-container{
+  background: #C4C4C4;
+  width: 425px;
+  height: 200px;
+  border-radius: 0 0 5% 5%;
+  display: grid;
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-areas:
+    ". . . . . . . . . . ."
+    ". f . . fx fxi . . fy fyi ."
+    ". t . . tx txi . . ty tyi ."
+    ". . . . . . . . . . ."
+    ". b b b b b b b b b ."
+    ". . . . . . . . . . ."
+  ;
+  font-size: 18px;
+  place-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+/*-----------------       from                  --------------*/
+.from{
+ grid-area: f;
+}
+.from-x{
+  grid-area: fx;
+}
+.from-x-input{
+  grid-area: fxi;
+}
+.from-y{
+  grid-area: fy;
+}
+.from-y-input{
+  grid-area: fyi;
+}
+/*-----------------       to                  --------------*/
+.to{
+  grid-area: t;
+}
+.to-x{
+  grid-area: tx;
+}
+.to-x-input{
+  grid-area: txi;
+}
+.to-y{
+  grid-area: ty;
+}
+.to-y-input{
+  grid-area: tyi;
+}
+.btn{
+  grid-area: b;
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  background: #9D9D9D;
+  border-style: none;
+  border-radius: 5%;
+  color: #fff;
+  font-weight: bold;
+}
+/*-----------------       input                  --------------*/
+.from-x-input,
+.from-y-input,
+.to-x-input,
+.to-y-input{
+  width: 80px;
+  height: 20px;
+  padding: 2px;
+  border-style: none;
+  border-radius: 5%;
+}
