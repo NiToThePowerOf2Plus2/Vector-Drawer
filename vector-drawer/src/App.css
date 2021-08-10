@@ -28,6 +28,23 @@
   width: 425px;
   height: 300px;
   border-radius: 5% 5% 0 0;
+  display: grid;
+}
+.grid-border{
+  place-self: center;
+  width: 400px;
+  height: 275px;
+  border-left: black solid 1px;
+  border-bottom: black solid 1px;
+  display: grid;
+  grid-template-rows: repeat(17,15px);
+  grid-template-columns: repeat(25,15px);
+  padding: 0;
+}
+.cell{
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 .control-container{
   background: #C4C4C4;
@@ -85,13 +102,20 @@
 .btn{
   grid-area: b;
   width: 100px;
-  height: 30px;
+  height: 40px;
   padding: 5px;
   background: #9D9D9D;
   border-style: none;
   border-radius: 5%;
   color: #fff;
+  font-size: 18px;
   font-weight: bold;
+}
+.btn:hover{
+  background: #747373;
+}
+.btn:active{
+  background: #9D9D9D;
 }
 /*-----------------       input                  --------------*/
 .from-x-input,
